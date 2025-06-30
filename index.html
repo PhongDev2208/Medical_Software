@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phần Mềm Y Tế Số - Giải Pháp Quản Lý Y Tế Hiện Đại</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header Banner -->
+  <header class="header-banner">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 font-weight-bold mb-3">Phần Mềm Y Tế Số</h1>
+          <p class="lead mb-4">Hệ sinh thái phần mềm quản lý y tế hiện đại cho phòng khám & bệnh viện</p>
+          <div class="d-flex justify-content-center">
+            <span class="badge badge-light px-3 py-2 mr-3"><i class="fas fa-users mr-2"></i>150+ Cơ sở y tế</span>
+            <span class="badge badge-light px-3 py-2"><i class="fas fa-heart mr-2"></i>5M+ Bệnh nhân</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="#"><i class="fas fa-heartbeat mr-2"></i>Y Tế Số</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#sanpham">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="#he-sinh-thai">Hệ sinh thái</a></li>
+          <li class="nav-item"><a class="nav-link" href="#loi-ich">Lợi ích</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tin-tuc">Tin tức</a></li>
+          <li class="nav-item"><a class="nav-link" href="#khach-hang">Khách hàng</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lienhe">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 fade-in-up">
+          <h2 class="display-5 font-weight-bold text-primary mb-4">
+            Giải pháp chuyển đổi số toàn diện cho cơ sở y tế
+          </h2>
+          <p class="lead mb-4 text-muted">
+            Phần mềm quản lý phòng khám, bệnh viện, tiêm chủng, marketing y tế và hồ sơ sức khỏe điện tử.
+            Tối ưu vận hành, nâng cao trải nghiệm bệnh nhân, kết nối liên tục trước - trong - sau khám.
+          </p>
+          <div class="d-flex flex-wrap">
+            <a href="#lienhe" class="btn btn-primary-custom btn-lg mr-3 mb-3">
+              <i class="fas fa-play mr-2"></i>Đăng ký Demo miễn phí
+            </a>
+            <a href="#sanpham" class="btn btn-outline-primary btn-lg mb-3">
+              <i class="fas fa-info-circle mr-2"></i>Tìm hiểu thêm
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-in-up">
+          <img
+            src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Phần mềm y tế số" class="img-fluid hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 stat-item fade-in-up">
+          <div class="stat-number">150+</div>
+          <p class="mb-0">Cơ sở y tế</p>
+        </div>
+        <div class="col-md-3 stat-item fade-in-up">
+          <div class="stat-number">5,000+</div>
+          <p class="mb-0">Chuyên viên y tế</p>
+        </div>
+        <div class="col-md-3 stat-item fade-in-up">
+          <div class="stat-number">5M+</div>
+          <p class="mb-0">Bệnh nhân được phục vụ</p>
+        </div>
+        <div class="col-md-3 stat-item fade-in-up">
+          <div class="stat-number">99.9%</div>
+          <p class="mb-0">Thời gian hoạt động</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="sanpham" class="py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Sản phẩm nổi bật</h2>
+          <p class="lead text-muted">Giải pháp toàn diện cho mọi mô hình cơ sở y tế</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              class="card-img-top card-img-custom" alt="Phần mềm PK Đa Khoa">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">Phần mềm phòng khám đa khoa</h5>
+              <p class="card-text flex-grow-1">Quản lý toàn diện: tiếp nhận, khám bệnh, kho thuốc, báo cáo, lịch hẹn,
+                BHYT.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100">
+            <img
+              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              class="card-img-top card-img-custom" alt="Phần mềm PK Mắt">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">Phần mềm phòng khám mắt</h5>
+              <p class="card-text flex-grow-1">Chuyên biệt cho chuyên khoa mắt, tích hợp thiết bị, quản lý phẫu thuật,
+                hồ sơ bệnh án.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100">
+            <img
+              src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              class="card-img-top card-img-custom" alt="Phần mềm PK Sản Phụ Khoa">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">Phần mềm sản phụ khoa</h5>
+              <p class="card-text flex-grow-1">Quản lý khám thai, hồ sơ sản phụ, nhắc lịch tiêm chủng, báo cáo chuyên
+                sâu.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100">
+            <img
+              src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              class="card-img-top card-img-custom" alt="Phần mềm tiêm chủng">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">Phần mềm trung tâm tiêm chủng</h5>
+              <p class="card-text flex-grow-1">Quản lý lịch tiêm, nhắc lịch, kho vắc xin, báo cáo, kết nối cổng tiêm
+                chủng quốc gia.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem Section -->
+  <section id="he-sinh-thai" class="ecosystem-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Hệ sinh thái y tế số</h2>
+          <p class="lead text-muted">Ba giải pháp tích hợp liền mạch cho trải nghiệm tối ưu</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="eco-card">
+            <div class="eco-icon">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <h4 class="text-primary mb-3">Phần mềm HIS quản lý</h4>
+            <p>Đầy đủ tính năng vận hành cho mọi mô hình CSYT: đặt hẹn, tiếp nhận, khám bệnh, kho thuốc, báo cáo doanh
+              thu.</p>
+            <ul class="list-unstyled text-left mt-3">
+              <li><i class="fas fa-check text-success mr-2"></i>Quản lý hồ sơ bệnh nhân</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Lịch hẹn thông minh</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Quản lý kho thuốc</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Báo cáo tự động</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="eco-card">
+            <div class="eco-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h4 class="text-primary mb-3">Ứng dụng hồ sơ sức khỏe</h4>
+            <p>Quản lý hồ sơ sức khỏe, đặt lịch khám, nhắc hẹn, kết nối liên tục với bệnh nhân qua app di động.</p>
+            <ul class="list-unstyled text-left mt-3">
+              <li><i class="fas fa-check text-success mr-2"></i>Hồ sơ sức khỏe điện tử</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Đặt lịch trực tuyến</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Nhắc nhở thông minh</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Tư vấn từ xa</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="eco-card">
+            <div class="eco-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4 class="text-primary mb-3">Phần mềm tự động hóa marketing</h4>
+            <p>Chăm sóc khách hàng tự động, gửi thông điệp cá nhân hóa, tăng tỷ lệ quay lại và hài lòng bệnh nhân.</p>
+            <ul class="list-unstyled text-left mt-3">
+              <li><i class="fas fa-check text-success mr-2"></i>Marketing tự động</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Phân tích dữ liệu</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Chăm sóc cá nhân hóa</li>
+              <li><i class="fas fa-check text-success mr-2"></i>Theo dõi hiệu quả</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="loi-ich" class="py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Lợi ích của hệ sinh thái</h2>
+          <p class="lead text-muted">Tối ưu hóa mọi quy trình từ quản lý đến chăm sóc bệnh nhân</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100 text-center">
+            <div class="card-body">
+              <div class="eco-icon mb-3">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h5 class="card-title text-primary">Giảm tải công việc hành chính</h5>
+              <p class="card-text">Tự động hóa quy trình, nhân viên tập trung chăm sóc bệnh nhân thay vì giấy tờ.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100 text-center">
+            <div class="card-body">
+              <div class="eco-icon mb-3">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h5 class="card-title text-primary">Giảm tỷ lệ bỏ lỡ lịch hẹn</h5>
+              <p class="card-text">Quản lý lịch hẹn thông minh, giảm thời gian chờ, tối ưu luồng bệnh nhân.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100 text-center">
+            <div class="card-body">
+              <div class="eco-icon mb-3">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h5 class="card-title text-primary">Chăm sóc toàn diện & bền vững</h5>
+              <p class="card-text">Kết nối sau khám, nhắc nhở tự động, tư vấn y tế từ xa, nâng cao chất lượng điều trị.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="tin-tuc" class="py-80" style="background: var(--light-blue);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Tin công nghệ - phần mềm</h2>
+          <p class="lead text-muted">Cập nhật kiến thức và xu hướng công nghệ y tế</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100">
+            <img
+              src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              class="card-img-top card-img-custom" alt="Quy trình tiếp đón bệnh nhân">
+            <div class="card-body">
+              <h6 class="card-title">Quy trình tiếp đón bệnh nhân Bộ Y tế</h6>
+              <p class="card-text text-muted small">Hướng dẫn các bước đăng ký, khám bệnh, thanh toán, nhận thuốc hiệu
+                quả và nhanh chóng.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              class="card-img-top card-img-custom" alt="Quy tắc ứng xử nhân viên y tế">
+            <div class="card-body">
+              <h6 class="card-title">Quy tắc ứng xử của nhân viên y tế 2025</h6>
+              <p class="card-text text-muted small">Cập nhật quy định mới nhất về quy tắc ứng xử, giao tiếp nghề nghiệp
+                trong ngành y tế.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+          <div class="card card-custom h-100">
+            <img
+              src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              class="card-img-top card-img-custom" alt="Bảo hiểm y tế tự nguyện">
+            <div class="card-body">
+              <h6 class="card-title">Bảo hiểm y tế tự nguyện là gì?</h6>
+              <p class="card-text text-muted small">Giải thích về BHYT tự nguyện, cách tham gia và lợi ích cho bệnh
+                nhân, cơ sở y tế.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Section -->
+  <section id="khach-hang" class="py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Khách hàng tiêu biểu</h2>
+          <p class="lead text-muted">Được tin tưởng bởi hàng trăm cơ sở y tế trên toàn quốc</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4 fade-in-up">
+          <div class="card card-custom">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                    class="img-fluid rounded mb-3" alt="Bệnh viện Mắt Hà Đông" style="max-height: 120px;">
+                </div>
+                <div class="col-md-8">
+                  <h5 class="text-primary">Bệnh viện Mắt Hà Đông</h5>
+                  <p class="text-muted">Triển khai hệ thống quản lý chuyên khoa mắt, tích hợp lịch hẹn, kho thuốc, báo
+                    cáo, nâng cao hiệu quả vận hành.</p>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 fade-in-up">
+          <div class="card card-custom">
+            <div class="card-body text-center">
+              <div class="eco-icon mb-3">
+                <i class="fas fa-hospital-alt"></i>
+              </div>
+              <h5 class="text-primary">150+ cơ sở y tế</h5>
+              <p class="text-muted">Hơn 5.000 chuyên viên y tế sử dụng, phục vụ 5 triệu bệnh nhân trên toàn quốc.</p>
+              <div class="row text-center mt-3">
+                <div class="col-4">
+                  <strong class="text-primary">99.9%</strong>
+                  <div class="small text-muted">Uptime</div>
+                </div>
+                <div class="col-4">
+                  <strong class="text-primary">24/7</strong>
+                  <div class="small text-muted">Hỗ trợ</div>
+                </div>
+                <div class="col-4">
+                  <strong class="text-primary">4.9/5</strong>
+                  <div class="small text-muted">Đánh giá</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-80" style="background: var(--light-blue);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Câu hỏi thường gặp</h2>
+          <p class="lead text-muted">Những thắc mắc phổ biến về sản phẩm và dịch vụ</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="faq-item fade-in-up">
+            <div class="faq-header" data-toggle="collapse" data-target="#faq1">
+              <i class="fas fa-plus mr-2"></i>Các dịch vụ chính của công ty là gì?
+            </div>
+            <div id="faq1" class="collapse faq-body">
+              Chúng tôi cung cấp phần mềm quản lý phòng khám, bệnh viện, tiêm chủng, marketing y tế và hồ sơ sức khỏe
+              điện tử.
+            </div>
+          </div>
+          <div class="faq-item fade-in-up">
+            <div class="faq-header" data-toggle="collapse" data-target="#faq2">
+              <i class="fas fa-plus mr-2"></i>Lợi ích khi lựa chọn đồng hành cùng chúng tôi?
+            </div>
+            <div id="faq2" class="collapse faq-body">
+              Tối ưu vận hành, tăng doanh thu, nâng cao trải nghiệm bệnh nhân, hỗ trợ 24/7 và triển khai nhanh chóng.
+            </div>
+          </div>
+          <div class="faq-item fade-in-up">
+            <div class="faq-header" data-toggle="collapse" data-target="#faq3">
+              <i class="fas fa-plus mr-2"></i>Phần mềm có tích hợp thiết bị y tế không?
+            </div>
+            <div id="faq3" class="collapse faq-body">
+              Có, hệ thống hỗ trợ kết nối với nhiều thiết bị siêu âm, xét nghiệm, PACS, HIS, cổng tiêm chủng quốc gia.
+            </div>
+          </div>
+          <div class="faq-item fade-in-up">
+            <div class="faq-header" data-toggle="collapse" data-target="#faq4">
+              <i class="fas fa-plus mr-2"></i>Làm thế nào để liên hệ tư vấn hoặc đặt hàng?
+            </div>
+            <div id="faq4" class="collapse faq-body">
+              Bạn có thể liên hệ qua hotline, email hoặc điền form liên hệ bên dưới. Chúng tôi sẽ phản hồi trong 24h.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="lienhe" class="py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Liên hệ tư vấn & demo</h2>
+          <p class="lead text-muted">Đăng ký ngay để được tư vấn miễn phí và trải nghiệm demo</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="card card-custom">
+            <div class="card-body">
+              <h5 class="text-primary mb-4"><i class="fas fa-envelope mr-2"></i>Gửi yêu cầu tư vấn</h5>
+              <form>
+                <div class="form-group">
+                  <label for="name">Họ và tên *</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Số điện thoại *</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="note">Ghi chú</label>
+                  <textarea class="form-control" id="note" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-custom btn-block">
+                  <i class="fas fa-paper-plane mr-2"></i>Đăng ký ngay
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-custom">
+            <div class="card-body">
+              <h5 class="text-primary mb-4"><i class="fas fa-info-circle mr-2"></i>Thông tin liên hệ</h5>
+              <div class="mb-3">
+                <h6><strong>Công ty TNHH Giải Pháp Y Tế Số</strong></h6>
+              </div>
+              <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                  38/15B Nguyễn Văn Trỗi, P.15, Q. Phú Nhuận, TP.HCM</p>
+                <p><i class="fas fa-envelope text-primary mr-3"></i>
+                  <a href="mailto:sales@qasol.net">sales@qasol.net</a>
+                </p>
+                <p><i class="fas fa-phone text-primary mr-3"></i>
+                  <a href="tel:0797907886">0797 907 886</a>
+                </p>
+                <p><i class="fas fa-phone-alt text-primary mr-3"></i>
+                  <a href="tel:02871077886">0287 1077 886</a>
+                </p>
+                <p><i class="fas fa-id-card text-primary mr-3"></i>
+                  Mã số thuế: 0312490712</p>
+              </div>
+              <div class="mt-4">
+                <h6 class="text-primary">Giờ làm việc:</h6>
+                <p class="mb-1">Thứ 2 - Thứ 6: 8:00 - 17:30</p>
+                <p class="mb-0">Thứ 7: 8:00 - 12:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="text-white mb-3"><i class="fas fa-heartbeat mr-2"></i>Y Tế Số</h5>
+          <p class="text-light">Đơn vị cung cấp giải pháp phần mềm quản lý y tế hàng đầu tại Việt Nam.</p>
+          <div class="social-links">
+            <a href="#" class="text-light mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-light mr-3"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-light mr-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h6 class="text-white mb-3">Sản phẩm</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Phòng khám đa khoa</a></li>
+            <li><a href="#" class="text-light">Phòng khám mắt</a></li>
+            <li><a href="#" class="text-light">Sản phụ khoa</a></li>
+            <li><a href="#" class="text-light">Tiêm chủng</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h6 class="text-white mb-3">Dịch vụ</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Tư vấn</a></li>
+            <li><a href="#" class="text-light">Triển khai</a></li>
+            <li><a href="#" class="text-light">Đào tạo</a></li>
+            <li><a href="#" class="text-light">Hỗ trợ 24/7</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h6 class="text-white mb-3">Công ty</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Giới thiệu</a></li>
+            <li><a href="#" class="text-light">Tin tức</a></li>
+            <li><a href="#" class="text-light">Tuyển dụng</a></li>
+            <li><a href="#" class="text-light">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h6 class="text-white mb-3">Chính sách</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Bảo mật</a></li>
+            <li><a href="#" class="text-light">Điều khoản</a></li>
+            <li><a href="#" class="text-light">Quy trình</a></li>
+            <li><a href="#" class="text-light">Bảo trì</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0 text-light">&copy; 2025 Giải Pháp Y Tế Số. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p class="mb-0 text-light">Website by <span class="text-warning">Y Tế Số</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Contact Buttons -->
+  <div class="floating-contact contact-zalo">
+    <div class="contact-tooltip">Chat qua Zalo</div>
+    <a href="https://zalo.me/0797907886" target="_blank" class="contact-btn zalo">
+      <i class="fas fa-comments"></i>
+    </a>
+  </div>
+
+  <div class="floating-contact contact-phone">
+    <div class="contact-tooltip">Gọi ngay: 0797 907 886</div>
+    <a href="tel:0797907886" class="contact-btn phone">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap 4 JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Smooth scrolling for navigation links
+    $('a[href^="#"]').on('click', function (event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top - 70
+        }, 1000);
+      }
+    });
+
+    // Animation on scroll
+    function animateOnScroll() {
+      $('.fade-in-up').each(function () {
+        if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+          $(this).addClass('animate');
+        }
+      });
+    }
+
+    $(window).scroll(animateOnScroll);
+    $(document).ready(animateOnScroll);
+
+    // FAQ accordion
+    $('.faq-header').click(function () {
+      $(this).parent().toggleClass('active');
+      $(this).find('i').toggleClass('fa-plus fa-minus');
+    });
+
+    // Form submission
+    $('form').submit(function (e) {
+      e.preventDefault();
+      alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ sớm nhất.');
+    });
+
+    // Navbar scroll effect
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $('.navbar-custom').addClass('shadow-lg');
+      } else {
+        $('.navbar-custom').removeClass('shadow-lg');
+      }
+    });
+  </script>
+</body>
+
+</html>
