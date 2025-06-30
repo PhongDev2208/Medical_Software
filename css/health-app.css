@@ -1,0 +1,779 @@
+/* Health App Page Styles */
+
+/* Body padding to prevent navbar overlap */
+body {
+  padding-top: 85px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 40% 20%,
+      rgba(255, 255, 255, 0.05) 3px,
+      transparent 3px
+    );
+  background-size: 100px 100px, 60px 60px, 120px 120px;
+  animation: float 20s ease-in-out infinite;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.hero-badge i {
+  color: #ffd700;
+  margin-right: 8px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.hero-features {
+  margin-bottom: 30px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.feature-item i {
+  color: #28a745;
+  margin-right: 12px;
+  font-size: 1.1em;
+  flex-shrink: 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.hero-actions .btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.hero-actions .btn-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+}
+
+.hero-actions .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.4);
+}
+
+.hero-actions .btn-outline-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Hero Image */
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+.phone-mockup {
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+}
+
+.phone-mockup img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px 20px;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: floatUp 3s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.floating-card i {
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+.card-1 {
+  top: 15%;
+  left: -15%;
+  animation-delay: 0s;
+}
+
+.card-2 {
+  top: 45%;
+  right: -20%;
+  animation-delay: 1s;
+}
+
+.card-3 {
+  bottom: 25%;
+  left: -10%;
+  animation-delay: 2s;
+}
+
+/* Section Styles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 50px;
+}
+
+/* Features Overview */
+.features-overview {
+  padding: 80px 0;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #f8f9fa;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  margin-bottom: 25px;
+}
+
+.feature-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.feature-card h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.feature-card p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Main Features */
+.main-features {
+  padding: 80px 0;
+}
+
+.feature-image {
+  position: relative;
+  text-align: center;
+}
+
+.feature-icon-large {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.feature-screenshot {
+  margin-top: 30px;
+}
+
+.feature-screenshot img {
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.feature-content {
+  padding: 20px 0;
+}
+
+.feature-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.feature-description {
+  font-size: 1.1rem;
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  padding: 8px 0;
+  font-size: 1rem;
+  color: #495057;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list li i {
+  color: #28a745;
+  margin-right: 12px;
+  font-size: 1.1em;
+}
+
+/* Corporate Health */
+.corporate-health {
+  padding: 80px 0;
+}
+
+.corporate-content {
+  padding: 20px 0;
+}
+
+.benefit-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.benefit-item i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.benefit-item h6 {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.security-features {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.security-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.security-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.corporate-image img {
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Journey Section */
+.journey-section {
+  padding: 80px 0;
+}
+
+.journey-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.journey-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.journey-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.journey-header i {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.journey-header h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.journey-list {
+  list-style: none;
+  padding: 0;
+}
+
+.journey-list li {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #495057;
+  border-bottom: 1px solid #f8f9fa;
+  position: relative;
+  padding-left: 25px;
+}
+
+.journey-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.journey-list li:last-child {
+  border-bottom: none;
+}
+
+/* Marketing Section */
+.marketing-section {
+  padding: 80px 0;
+}
+
+.marketing-content {
+  padding: 20px 0;
+}
+
+.marketing-features {
+  margin-top: 30px;
+}
+
+.marketing-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.marketing-item i {
+  font-size: 2rem;
+  margin-right: 20px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.marketing-text h6 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.marketing-text p {
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.marketing-image img {
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.benefit-header i {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.benefit-header h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.benefit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-list li {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #495057;
+  border-bottom: 1px solid #f8f9fa;
+  position: relative;
+  padding-left: 25px;
+}
+
+.benefit-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.benefit-list li:last-child {
+  border-bottom: none;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+}
+
+.accordion .card {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e9ecef;
+}
+
+.accordion .card-header {
+  background: #f8f9fa;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.accordion .btn-link {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.accordion .btn-link:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.accordion .card-body {
+  padding: 25px;
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Download Section */
+.download-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+.download-buttons {
+  margin-top: 30px;
+}
+
+.download-buttons .btn {
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.download-buttons .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.download-note {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer-section {
+  padding: 60px 0 20px;
+}
+
+.footer-section h5,
+.footer-section h6 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-section .list-unstyled li {
+  margin-bottom: 8px;
+}
+
+.footer-section .list-unstyled a {
+  color: #adb5bd;
+  transition: color 0.3s ease;
+}
+
+.footer-section .list-unstyled a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #007bff;
+  transform: translateY(-2px);
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #adb5bd;
+}
+
+.contact-info i {
+  color: #007bff;
+  width: 20px;
+}
+
+/* Floating Contact */
+.tooltip-custom {
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatUp {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .floating-card {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+  }
+
+  .security-features {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .download-buttons .btn {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .marketing-item {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .marketing-item i {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .feature-card,
+  .journey-card,
+  .benefit-card {
+    padding: 30px 20px;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .hero-features {
+    text-align: center;
+  }
+}

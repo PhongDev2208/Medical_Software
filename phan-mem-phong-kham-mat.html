@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeliViz - Phần mềm Quản lý Phòng khám Mắt | QAS</title>
+    <meta name="description"
+        content="HeliViz - Phần mềm quản lý phòng khám mắt chuyên nghiệp, tích hợp AI và công nghệ hiện đại. Chỉ từ 450k/tháng.">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/eye-clinic.css">
+    <link rel="stylesheet" href="css/floating-contact.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://qasvn.com/assets/img/logo/logo.svg" alt="QAS Logo" height="40">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">
+                            Sản phẩm
+                        </a>
+                        <div class="dropdown-menu dropdown-mega" aria-labelledby="navbarDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h6 class="dropdown-header">
+                                            <i class="fas fa-hospital text-primary"></i>
+                                            Phần mềm Bệnh viện
+                                        </h6>
+                                        <a class="dropdown-item" href="phan-mem-benh-vien.html">
+                                            <i class="fas fa-building"></i>
+                                            Bệnh viện Đa khoa
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="dropdown-header">
+                                            <i class="fas fa-clinic-medical text-success"></i>
+                                            Phần mềm Phòng khám
+                                        </h6>
+                                        <a class="dropdown-item" href="phan-mem-phong-kham-da-khoa.html">
+                                            <i class="fas fa-user-md"></i>
+                                            PK Đa khoa
+                                        </a>
+                                        <a class="dropdown-item active" href="phan-mem-phong-kham-mat.html">
+                                            <i class="fas fa-eye"></i>
+                                            PK Mắt
+                                        </a>
+                                        <a class="dropdown-item" href="phan-mem-phong-kham-san-phu-khoa.html">
+                                            <i class="fas fa-baby"></i>
+                                            PK Sản Phụ Khoa
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="dropdown-header">
+                                            <i class="fas fa-pills text-info"></i>
+                                            Quản lý Dược phẩm
+                                        </h6>
+                                        <a class="dropdown-item" href="phan-mem-nha-thuoc.html">
+                                            <i class="fas fa-prescription-bottle-alt"></i>
+                                            Phần mềm Nhà thuốc
+                                        </a>
+                                        <a class="dropdown-item" href="phan-mem-trung-tam-tiem-chung.html">
+                                            <i class="fas fa-syringe"></i>
+                                            TT Tiêm chủng
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="dropdown-header">
+                                            <i class="fas fa-mobile-alt text-warning"></i>
+                                            Ứng dụng di động
+                                        </h6>
+                                        <a class="dropdown-item" href="ung-dung-ho-so-suc-khoe.html">
+                                            <i class="fas fa-heart"></i>
+                                            Hồ sơ Sức khỏe
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-cta" href="contact.html">Dùng thử miễn phí</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-eye-clinic">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-eye"></i> Chuyên khoa mắt
+                        </div>
+                        <h1>HeliViz</h1>
+                        <p class="lead">Phần mềm Quản lý Phòng khám Mắt trên nền tảng di động và công nghệ AI</p>
+                        <div class="hero-price">
+                            <span class="price-label">chỉ từ</span>
+                            <span class="price-value">450k</span>
+                            <span class="price-period">/tháng</span>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="contact.html" class="btn btn-primary btn-lg mr-3">
+                                <i class="fas fa-play"></i> Đăng ký dùng thử
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-phone"></i> Liên hệ tư vấn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image float-animation">
+                        <img src="https://qasvn.com/assets/img/QAScover/pkmat_homepage-cover.png"
+                            alt="HeliViz Eye Clinic Software" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="trust-text">Được tin tưởng bởi 150+ Cơ sở Y tế</p>
+                    <img src="https://qasvn.com/assets/img/brand/logo%20kh%C3%A1ch%20h%C3%A0ng_DESKTOP.svg"
+                        alt="Trusted by healthcare facilities" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eye Care Features -->
+    <section class="eye-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Nâng cao chất lượng quản lý phòng khám</h2>
+                    <p class="section-subtitle">Tối ưu hóa quy trình khám chữa bệnh mắt với công nghệ hiện đại</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-eye-card">
+                        <div class="feature-eye-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Giảm thời gian tiếp nhận</h4>
+                        <p>Tiếp nhận bệnh nhân nhanh chóng và chính xác thông qua tính năng quét mã lấy thông tin tự
+                            động nhằm rút ngắn thời gian nhập liệu và tránh sai sót.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-eye-card">
+                        <div class="feature-eye-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>Tối ưu thời gian làm việc</h4>
+                        <p>Hệ thống quản lý thông tin hẹn khám và sắp xếp lịch hẹn một cách thông minh, đảm bảo không
+                            trùng lặp, tối ưu thời gian làm việc cho bác sĩ.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-eye-card">
+                        <div class="feature-eye-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h4>Tăng hiệu quả khám bệnh</h4>
+                        <p>Hệ thống cung cấp bệnh án mắt chuyên biệt, tra cứu hồ sơ và lịch sử khám thuận tiện, gợi ý
+                            chẩn đoán và đơn thuốc, cùng khả năng cập nhật kết quả đo mắt tại màn hình khám.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Efficiency -->
+    <section class="eye-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Gia tăng hiệu quả kinh doanh</h2>
+                    <p class="section-subtitle">Tối ưu hóa doanh thu và quản lý kinh doanh hiệu quả</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-eye-card">
+                        <div class="feature-eye-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Hỗ trợ tư vấn bán hàng</h4>
+                        <p>Hệ thống cung cấp thông tin sản phẩm chi tiết để tư vấn dễ dàng hơn, bao gồm hiển thị hình
+                            ảnh trực quan, thông tin tồn kho, khuyến mãi, tính năng so sánh giá.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-eye-card">
+                        <div class="feature-eye-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Giảm thất thoát</h4>
+                        <p>Hệ thống giúp theo dõi chính xác công nợ, thông tin nhập/xuất và dự trù kho, cùng việc gợi ý
+                            đặt hàng dựa trên tình hình nhập/xuất, bán sản phẩm.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-eye-card">
+                        <div class="feature-eye-icon">
+                            <i class="fas fa-users-clock"></i>
+                        </div>
+                        <h4>Tối ưu thời gian chờ đợi</h4>
+                        <p>Việc quản lý và sắp xếp hàng đợi một cách thông minh và tự động, giúp Phòng khám có quy trình
+                            khám bệnh liền mạch, bệnh nhân không tốn nhiều thời gian chờ đợi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Experience -->
+    <section class="eye-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Nâng cao trải nghiệm khách hàng</h2>
+                    <p class="section-subtitle">Chăm sóc bệnh nhân toàn diện và xây dựng lòng trung thành</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="feature-eye-card">
+                        <div class="feature-eye-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Thiết lập kênh liên hệ khách hàng</h4>
+                        <p>Hệ thống tạo và quản lý nhiều nhóm khách hàng, từ đó dễ dàng gửi thông báo chương trình ưu
+                            đãi, khuyến mãi. Thiết lập hệ thống tự động gửi thông báo nhắc lịch hẹn qua SMS, Email và
+                            Zalo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="feature-eye-card">
+                        <div class="feature-eye-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Tăng lượng khách hàng trung thành</h4>
+                        <p>Chương trình tích điểm và quản lý thành viên giúp gia tăng giá trị của từng nhóm khách hàng,
+                            qua đó tăng lượng khách hàng trung thành và mang lại lợi nhuận tối đa cho Phòng khám.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examination Process -->
+    <section class="examination-process">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Quy trình khám mắt chuyên nghiệp</h2>
+                    <p class="section-subtitle">Được thiết kế đặc biệt cho các đặc thù của phòng khám mắt</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Tiếp nhận và đăng ký</h4>
+                            <p>Hệ thống tiếp nhận bệnh nhân nhanh chóng với tính năng quét mã QR, tự động điền thông tin
+                                và giảm thiểu thời gian chờ đợi. Quản lý thông tin BHYT và tạo hồ sơ bệnh án điện tử.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Đo thị lực và khám sơ bộ</h4>
+                            <p>Tích hợp với các thiết bị đo thị lực, đo nhãn áp, và các thiết bị chẩn đoán mắt hiện đại.
+                                Tự động lưu trữ kết quả đo và hiển thị trên màn hình khám bệnh.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Khám chuyên khoa mắt</h4>
+                            <p>Bệnh án mắt chuyên biệt với đầy đủ các trường thông tin đặc thù. Gợi ý chẩn đoán và đơn
+                                thuốc dựa trên triệu chứng và lịch sử khám bệnh.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Thanh toán và tư vấn</h4>
+                            <p>Tính toán chi phí tự động, áp dụng khuyến mãi và BHYT. Tư vấn bán kính, tròng kính với
+                                thông tin chi tiết về sản phẩm và khuyến mãi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eye Technology */
+    <section class="eye-technology">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-white">Công nghệ tiên tiến cho phòng khám mắt</h2>
+                    <p class="section-subtitle text-white opacity-75">Tích hợp với các thiết bị chẩn đoán hiện đại</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h4>Máy chụp đáy mắt</h4>
+                        <p>Tích hợp với máy chụp đáy mắt, tự động lưu trữ và quản lý hình ảnh chẩn đoán.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-eye-dropper"></i>
+                        </div>
+                        <h4>Đo nhãn áp</h4>
+                        <p>Kết nối với thiết bị đo nhãn áp, theo dõi chỉ số theo thời gian và cảnh báo bất thường.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>OCT mắt</h4>
+                        <p>Tích hợp với máy OCT để chẩn đoán các bệnh lý võng mạc và thần kinh thị giác.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Đo thị trường</h4>
+                        <p>Kết nối với máy đo thị trường, theo dõi tiến triển bệnh lý và hiệu quả điều trị.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eye Statistics -->
+    <section class="eye-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Cơ sở y tế tin dùng</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Phòng khám mắt</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Thời gian hoạt động</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Hỗ trợ khách hàng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient App Section -->
+    <section class="patient-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Ứng dụng Hồ sơ Sức khỏe Điện tử</h2>
+                    <p class="section-subtitle">Kết nối bệnh nhân với phòng khám qua ứng dụng di động</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="app-feature">
+                        <div class="app-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="app-content">
+                            <h4>Quản lý Hồ sơ Sức khỏe</h4>
+                            <p>Bệnh nhân có thể xem lịch sử khám bệnh, kết quả xét nghiệm, đơn thuốc và theo dõi tình
+                                trạng sức khỏe mắt theo thời gian.</p>
+                            <ul class="app-features-list">
+                                <li>Lưu trữ kết quả khám mắt</li>
+                                <li>Theo dõi chỉ số nhãn áp</li>
+                                <li>Lịch sử đơn thuốc</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="app-feature">
+                        <div class="app-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="app-content">
+                            <h4>Đặt lịch hẹn - Nhắc lịch hẹn khám</h4>
+                            <p>Đặt lịch hẹn trực tuyến 24/7, nhận thông báo nhắc lịch khám qua nhiều kênh và quản lý
+                                lịch hẹn một cách tiện lợi.</p>
+                            <ul class="app-features-list">
+                                <li>Đặt lịch online 24/7</li>
+                                <li>Nhắc lịch qua SMS, Email, Zalo</li>
+                                <li>Hủy/đổi lịch dễ dàng</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="app-feature">
+                        <div class="app-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="app-content">
+                            <h4>Trợ lý sức khỏe AI</h4>
+                            <p>Hệ thống AI tư vấn và nhắc nhở các hoạt động chăm sóc mắt, theo dõi đơn thuốc và gợi ý
+                                chế độ dinh dưỡng phù hợp.</p>
+                            <ul class="app-features-list">
+                                <li>Nhắc nhở uống thuốc</li>
+                                <li>Tư vấn chăm sóc mắt</li>
+                                <li>Gợi ý dinh dưỡng cho mắt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Grid -->
+    <section class="benefits-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Lợi ích nổi bật của HeliViz</h2>
+                    <p class="section-subtitle">Giải pháp toàn diện cho phòng khám mắt hiện đại</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h5>Hosting trên nền tảng Cloud</h5>
+                            <p>Dữ liệu được lưu trữ an toàn trên cloud, đảm bảo tính ổn định và khả năng mở rộng cao.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-glasses"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h5>Quản lý kho kính chuyên biệt</h5>
+                            <p>Theo dõi tròng kính theo độ cầu, độ trụ, trục và quản lý gọng kính theo mẫu mã, kích
+                                thước.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h5>Báo cáo phân tích chi tiết</h5>
+                            <p>Phân tích doanh thu theo dịch vụ, bác sĩ, nguồn bệnh nhân và dự báo doanh thu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h5>Bảo mật thông tin tối đa</h5>
+                            <p>Tuân thủ các quy định về bảo mật thông tin y tế, mã hóa dữ liệu và sao lưu tự động.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h5>Tích hợp PACS</h5>
+                            <p>Kết nối với hệ thống PACS để lưu trữ và truy xuất hình ảnh chẩn đoán một cách hiệu quả.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h5>Quản lý chuỗi cơ sở</h5>
+                            <p>Đồng bộ dữ liệu giữa các cơ sở, quản lý tập trung và báo cáo tổng hợp toàn hệ thống.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="cta-title">Sẵn sàng nâng cao hiệu quả phòng khám mắt?</h2>
+                    <p class="cta-subtitle">Trải nghiệm HeliViz miễn phí trong 30 ngày</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg mr-3">
+                            <i class="fas fa-play"></i> Dùng thử miễn phí
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-phone"></i> Tư vấn ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h5>QAS Corporation</h5>
+                        <p>Đơn vị cung cấp giải pháp phần mềm quản lý y tế hàng đầu tại Việt Nam với hơn 10 năm kinh
+                            nghiệm.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Sản phẩm</h5>
+                        <ul class="footer-links">
+                            <li><a href="phan-mem-benh-vien.html">Bệnh viện Đa khoa</a></li>
+                            <li><a href="phan-mem-phong-kham-da-khoa.html">PK Đa Khoa</a></li>
+                            <li><a href="phan-mem-phong-kham-mat.html">Phòng khám mắt</a></li>
+                            <li><a href="phan-mem-nha-thuoc.html">Nhà thuốc</a></li>
+                            <li><a href="phan-mem-trung-tam-tiem-chung.html">Tiêm chủng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Công ty</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Dịch vụ</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Liên hệ</h5>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> MNG Building, 38/15B Nguyễn Văn Trỗi, P.15, Q. Phú
+                                Nhuận, TP.HCM</li>
+                            <li><i class="fas fa-phone"></i> 079.790.7886</li>
+                            <li><i class="fas fa-envelope"></i> sales@qasol.net</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 QAS Corporation. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <div class="contact-item phone">
+            <a href="tel:0797907886" class="contact-btn">
+                <i class="fas fa-phone"></i>
+                <span class="tooltip">Gọi điện</span>
+            </a>
+        </div>
+        <div class="contact-item zalo">
+            <a href="https://zalo.me/3236854467967614595" target="_blank" class="contact-btn">
+                <i class="fab fa-facebook-messenger"></i>
+                <span class="tooltip">Chat Zalo</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Dropdown hover and click functionality
+        $(document).ready(function () {
+            // Handle dropdown for desktop
+            $('.dropdown').hover(
+                function () {
+                    if ($(window).width() > 768) {
+                        $(this).addClass('show');
+                        $(this).find('.dropdown-menu').addClass('show');
+                    }
+                },
+                function () {
+                    if ($(window).width() > 768) {
+                        $(this).removeClass('show');
+                        $(this).find('.dropdown-menu').removeClass('show');
+                    }
+                }
+            );
+
+            // Handle dropdown for mobile
+            $('.dropdown-toggle').click(function (e) {
+                if ($(window).width() <= 768) {
+                    e.preventDefault();
+                    var $dropdown = $(this).parent();
+                    $dropdown.toggleClass('show');
+                    $dropdown.find('.dropdown-menu').toggleClass('show');
+                }
+            });
+
+            // Close dropdown when clicking outside
+            $(document).click(function (e) {
+                if (!$(e.target).closest('.dropdown').length) {
+                    $('.dropdown').removeClass('show');
+                    $('.dropdown-menu').removeClass('show');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 70
+                }, 1000);
+            }
+        });
+
+        // Counter animation
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current) + (target > 100 ? '+' : target > 90 ? '%' : '');
+            }, 20);
+        }
+
+        // Intersection Observer for counter animation
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = parseInt(counter.dataset.target || counter.textContent);
+                    animateCounter(counter, target);
+                    observer.unobserve(counter);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all stat numbers
+        document.querySelectorAll('.stat-number').forEach(counter => {
+            const text = counter.textContent.replace(/[^0-9]/g, '');
+            counter.dataset.target = text;
+            counter.textContent = '0';
+            observer.observe(counter);
+        });
+    </script>
+</body>
+
+</html>

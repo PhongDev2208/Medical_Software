@@ -1,0 +1,387 @@
+/* Eye Clinic Product Page Specific Styles */
+
+/* Hero Section */
+.hero-eye-clinic {
+  background: linear-gradient(135deg, #0077cc 0%, #00aaff 100%);
+  color: white;
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-eye-clinic::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  animation: float 20s ease-in-out infinite;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.hero-badge {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 2px solid #ffd700;
+}
+
+/* Eye Care Features */
+.eye-features {
+  padding: 80px 0;
+  background: #f8fbff;
+}
+
+.feature-eye-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 119, 204, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 119, 204, 0.1);
+}
+
+.feature-eye-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 119, 204, 0.15);
+}
+
+.feature-eye-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #0077cc, #00aaff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 2rem;
+  color: white;
+}
+
+.feature-eye-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.feature-eye-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Eye Examination Process */
+.examination-process {
+  padding: 80px 0;
+  background: white;
+}
+
+.process-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #f8fbff;
+  transition: all 0.3s ease;
+}
+
+.process-step:hover {
+  background: rgba(0, 119, 204, 0.05);
+  transform: translateX(10px);
+}
+
+.process-step:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.process-step:nth-child(even) .step-content {
+  text-align: right;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #0077cc, #00aaff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 30px;
+  min-width: 60px;
+}
+
+.step-content h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.step-content p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Eye Technology Section */
+.eye-technology {
+  padding: 80px 0;
+  background: linear-gradient(
+    135deg,
+    var(--dark-blue) 0%,
+    var(--primary-color) 100%
+  );
+  color: white;
+}
+
+.tech-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.tech-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.tech-icon {
+  font-size: 3rem;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.tech-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.tech-card p {
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  padding: 80px 0;
+  background: #f8fbff;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 119, 204, 0.08);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0, 119, 204, 0.12);
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0077cc, #00aaff);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  min-width: 50px;
+}
+
+.benefit-content h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.benefit-content p {
+  color: var(--text-light);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Eye Statistics */
+.eye-stats {
+  padding: 60px 0;
+  background: var(--primary-color);
+  color: white;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffd700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Patient App Section */
+.patient-app {
+  padding: 80px 0;
+  background: white;
+}
+
+.app-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #f8fbff;
+  transition: all 0.3s ease;
+}
+
+.app-feature:hover {
+  background: rgba(0, 119, 204, 0.05);
+  transform: translateY(-5px);
+}
+
+.app-feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.app-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #0077cc, #00aaff);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  margin: 0 30px;
+  min-width: 80px;
+}
+
+.app-content h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.app-content p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.app-features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.app-features-list li {
+  color: var(--text-light);
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.app-features-list li::before {
+  content: "✓";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .process-step,
+  .app-feature {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .process-step:nth-child(even) .step-content,
+  .app-feature:nth-child(even) .app-content {
+    text-align: center;
+  }
+
+  .step-number,
+  .app-icon {
+    margin: 0 0 20px 0;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+}
+
+/* Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}

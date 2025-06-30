@@ -51,6 +51,49 @@ body {
   width: 100%;
 }
 
+.navbar-custom .nav-item.dropdown .nav-link {
+  position: relative;
+}
+
+.navbar-custom .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeInDown 0.3s ease;
+}
+
+/* Keep dropdown open when hovering over the menu */
+.navbar-custom .dropdown-menu:hover {
+  display: block;
+}
+
+/* Add padding to prevent gap between trigger and dropdown */
+.navbar-custom .dropdown-menu {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+/* Create invisible bridge between nav item and dropdown */
+.navbar-custom .nav-item.dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: transparent;
+  z-index: 1001;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Cards */
 .card-custom {
   border: none;
@@ -152,4 +195,265 @@ body {
 .form-control:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 15px 0;
+  margin-top: 0;
+  min-width: 280px;
+}
+
+/* Mega dropdown styles */
+.dropdown-mega {
+  min-width: 600px;
+  max-width: 800px;
+  padding: 25px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: visible;
+}
+
+.dropdown-mega .container {
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.dropdown-mega .dropdown-header {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 0 10px 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--light-blue);
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-mega .dropdown-header i {
+  color: var(--primary-color);
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.dropdown-mega .dropdown-item {
+  color: var(--text-dark);
+  padding: 10px 0;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-overflow: clip;
+}
+
+.dropdown-mega .dropdown-item:hover {
+  background: linear-gradient(
+    135deg,
+    var(--light-blue),
+    rgba(0, 123, 255, 0.1)
+  );
+  color: var(--primary-color);
+  transform: translateX(5px);
+  padding-left: 15px;
+}
+
+.dropdown-mega .dropdown-item.active {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  font-weight: 600;
+}
+
+.dropdown-mega .dropdown-item.active:hover {
+  transform: translateX(5px);
+  padding-left: 15px;
+}
+
+.dropdown-mega .dropdown-item i {
+  color: var(--primary-color);
+  width: 20px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.dropdown-mega .dropdown-item.active i {
+  color: white;
+}
+
+/* Responsive mega dropdown */
+@media (max-width: 768px) {
+  .dropdown-mega {
+    min-width: 320px;
+    max-width: 90vw;
+    left: 10px;
+    transform: none;
+    position: absolute;
+  }
+
+  .dropdown-mega .container {
+    padding: 0 15px;
+  }
+
+  .dropdown-mega .row {
+    flex-direction: column;
+  }
+
+  .dropdown-mega .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.dropdown-header {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 20px 5px;
+  margin-bottom: 5px;
+}
+
+.dropdown-item {
+  color: var(--text-dark);
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(
+    135deg,
+    var(--light-blue),
+    rgba(0, 123, 255, 0.1)
+  );
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.dropdown-item i {
+  color: var(--primary-color);
+  width: 20px;
+}
+
+.dropdown-divider {
+  margin: 10px 0;
+  border-color: rgba(0, 123, 255, 0.1);
+}
+
+.navbar-nav .dropdown-toggle::after {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .dropdown.show .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+/* Product icons styling */
+.dropdown-item i.fas {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.dropdown-item:hover i.fas {
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Mobile dropdown adjustments */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    background: rgba(0, 78, 140, 0.1);
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .dropdown-item {
+    color: white;
+    padding: 8px 30px;
+  }
+
+  .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+    transform: translateX(0);
+  }
+
+  .dropdown-header {
+    color: var(--accent-color);
+    padding: 10px 30px 5px;
+  }
+}
+
+/* Additional dropdown fixes */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-nav .dropdown .dropdown-menu {
+  margin-top: 0;
+  border-top: 3px solid var(--primary-color);
+}
+
+/* Fix dropdown positioning */
+.navbar-nav .dropdown {
+  position: static;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .dropdown {
+    position: relative;
+  }
+
+  .dropdown-mega {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+}
+
+/* Ensure dropdown is visible */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Fix for mega dropdown container */
+.dropdown-mega .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
 }

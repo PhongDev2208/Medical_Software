@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeraGYN - Phần mềm Quản lý Phòng khám Sản Phụ Khoa | QAS</title>
+    <meta name="description"
+        content="HeraGYN - Phần mềm quản lý phòng khám sản phụ khoa chuyên nghiệp. Tích hợp siêu âm, theo dõi thai kỳ, quản lý lịch hẹn thông minh. Chỉ từ 450k/tháng.">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/obstetrics.css">
+    <link rel="stylesheet" href="css/floating-contact.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://qasvn.com/assets/img/logo/logo.svg" alt="QAS Logo" height="40">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">
+                            Sản phẩm
+                        </a>
+                        <div class="dropdown-menu dropdown-mega" aria-labelledby="navbarDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h6 class="dropdown-header">
+                                            <i class="fas fa-hospital text-primary"></i>
+                                            Phần mềm Bệnh viện
+                                        </h6>
+                                        <a class="dropdown-item" href="phan-mem-benh-vien.html">
+                                            <i class="fas fa-building"></i>
+                                            Bệnh viện Đa khoa
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="dropdown-header">
+                                            <i class="fas fa-clinic-medical text-success"></i>
+                                            Phần mềm Phòng khám
+                                        </h6>
+                                        <a class="dropdown-item" href="phan-mem-phong-kham-da-khoa.html">
+                                            <i class="fas fa-user-md"></i>
+                                            PK Đa khoa
+                                        </a>
+                                        <a class="dropdown-item" href="phan-mem-phong-kham-mat.html">
+                                            <i class="fas fa-eye"></i>
+                                            PK Mắt
+                                        </a>
+                                        <a class="dropdown-item active" href="phan-mem-phong-kham-san-phu-khoa.html">
+                                            <i class="fas fa-baby"></i>
+                                            PK Sản Phụ Khoa
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="dropdown-header">
+                                            <i class="fas fa-pills text-info"></i>
+                                            Quản lý Dược phẩm
+                                        </h6>
+                                        <a class="dropdown-item" href="phan-mem-nha-thuoc.html">
+                                            <i class="fas fa-prescription-bottle-alt"></i>
+                                            Phần mềm Nhà thuốc
+                                        </a>
+                                        <a class="dropdown-item" href="phan-mem-trung-tam-tiem-chung.html">
+                                            <i class="fas fa-syringe"></i>
+                                            TT Tiêm chủng
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 class="dropdown-header">
+                                            <i class="fas fa-mobile-alt text-warning"></i>
+                                            Ứng dụng di động
+                                        </h6>
+                                        <a class="dropdown-item" href="ung-dung-ho-so-suc-khoe.html">
+                                            <i class="fas fa-heart"></i>
+                                            Hồ sơ Sức khỏe
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-cta" href="contact.html">Dùng thử miễn phí</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 pt-5">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Phần mềm chuyên khoa sản phụ khoa #1</span>
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="brand-name">HeraGYN</span><br>
+                            Phần mềm Quản lý<br>
+                            <span class="text-primary">Phòng khám Sản Phụ Khoa</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Giải pháp quản lý toàn diện cho phòng khám sản phụ khoa với các tính năng đặc thù:
+                            tích hợp siêu âm, theo dõi thai kỳ, quản lý lịch hẹn thông minh và chăm sóc khách hàng tự
+                            động.
+                        </p>
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Tích hợp thiết bị siêu âm và hệ thống PACS</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Hồ sơ bệnh án điện tử chuyên biệt cho sản phụ khoa</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Quản lý thai kỳ và lịch khám thai định kỳ</span>
+                            </div>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="#demo" class="btn btn-primary btn-lg">
+                                <i class="fas fa-play"></i>
+                                Đăng ký dùng thử
+                            </a>
+                            <a href="#lien-he" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-phone"></i>
+                                Liên hệ tư vấn
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Cơ sở y tế</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15</div>
+                                <div class="stat-label">Năm kinh nghiệm</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2</div>
+                                <div class="stat-label">Tuần triển khai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="https://via.placeholder.com/600x500/f8f9fa/0066cc?text=HeraGYN+System"
+                            alt="HeraGYN - Phần mềm sản phụ khoa" class="img-fluid">
+                        <div class="hero-floating-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6><i class="fas fa-heartbeat text-danger"></i> Thai kỳ khỏe mạnh</h6>
+                                    <p class="mb-0">Theo dõi thai nhi chuyên nghiệp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Management Section -->
+    <section class="quality-section" id="nang-cao-chat-luong">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Nâng cao chất lượng quản lý phòng khám</h2>
+                <p class="section-subtitle">
+                    Giải pháp toàn diện giúp phòng khám sản phụ khoa vận hành hiệu quả và chuyên nghiệp
+                </p>
+            </div>
+
+            <div class="row">
+                <!-- Quality Feature 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="quality-card">
+                        <div class="quality-image">
+                            <img src="https://via.placeholder.com/350x250/e3f2fd/0066cc?text=Tối+ưu+quy+trình"
+                                alt="Tối ưu quy trình" class="img-fluid">
+                        </div>
+                        <div class="quality-content">
+                            <h4 class="quality-title">Tối ưu quy trình làm việc</h4>
+                            <p class="quality-description">
+                                Tạo lịch hẹn, tiếp nhận và quản lý lịch hẹn khám một cách hiệu quả.
+                                Thu thập, tổ chức thông tin về sản phụ, lịch sử bệnh án, và hồ sơ y tế dễ dàng.
+                                Tiết kiệm thời gian làm việc thủ công và tối ưu hóa quy trình làm việc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Feature 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="quality-card">
+                        <div class="quality-image">
+                            <img src="https://via.placeholder.com/350x250/e8f5e8/4caf50?text=Quản+lý+hồ+sơ"
+                                alt="Quản lý hồ sơ" class="img-fluid">
+                        </div>
+                        <div class="quality-content">
+                            <h4 class="quality-title">Quản lý hồ sơ bệnh án</h4>
+                            <p class="quality-description">
+                                Thu thập và quản lý thông tin đầy đủ từ chỉ số sinh hiệu đến lịch sử thai sản.
+                                Tích hợp chức năng chỉ định dịch vụ và kê đơn ngay trong phần mềm,
+                                đảm bảo sự chính xác và tiện lợi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Feature 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="quality-card">
+                        <div class="quality-image">
+                            <img src="https://via.placeholder.com/350x250/fff3e0/ff9800?text=Hiệu+quả+chuyên+môn"
+                                alt="Hiệu quả chuyên môn" class="img-fluid">
+                        </div>
+                        <div class="quality-content">
+                            <h4 class="quality-title">Tăng hiệu quả chuyên môn</h4>
+                            <p class="quality-description">
+                                Kết nối thiết bị y tế giúp thông tin kết quả siêu âm, xét nghiệm được truyền đạt
+                                tự động, tránh sai sót trong quá trình nhập liệu thủ công.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Efficiency Section -->
+    <section class="efficiency-section" id="gia-tang-hieu-qua">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Gia tăng hiệu quả hoạt động</h2>
+                <p class="section-subtitle">
+                    Tối ưu hóa hoạt động kinh doanh và nâng cao doanh thu cho phòng khám sản phụ khoa
+                </p>
+            </div>
+
+            <div class="row">
+                <!-- Efficiency Feature 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="efficiency-card">
+                        <div class="efficiency-image">
+                            <img src="https://via.placeholder.com/350x250/f3e5f5/9c27b0?text=Giao+dịch+trực+tuyến"
+                                alt="Giao dịch trực tuyến" class="img-fluid">
+                        </div>
+                        <div class="efficiency-content">
+                            <h4 class="efficiency-title">Giao dịch trực tuyến</h4>
+                            <p class="efficiency-description">
+                                Hệ thống đăng ký dịch vụ và thanh toán trực tuyến giúp thuận tiện cho khách hàng
+                                và giảm áp lực cho bộ phận tiếp nhận, giảm chi phí vận hành.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Efficiency Feature 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="efficiency-card">
+                        <div class="efficiency-image">
+                            <img src="https://via.placeholder.com/350x250/fce4ec/e91e63?text=Duy+trì+gắn+kết"
+                                alt="Duy trì gắn kết" class="img-fluid">
+                        </div>
+                        <div class="efficiency-content">
+                            <h4 class="efficiency-title">Duy trì sự gắn kết</h4>
+                            <p class="efficiency-description">
+                                Dễ dàng quản lý và tạo ra các chương trình khuyến mãi, giảm giá hoặc ưu đãi đặc biệt
+                                cho khách hàng, duy trì mối quan hệ với khách hàng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Efficiency Feature 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="efficiency-card">
+                        <div class="efficiency-image">
+                            <img src="https://via.placeholder.com/350x250/e8f5e8/4caf50?text=Đánh+thức+quan+tâm"
+                                alt="Đánh thức quan tâm" class="img-fluid">
+                        </div>
+                        <div class="efficiency-content">
+                            <h4 class="efficiency-title">Đánh thức sự quan tâm</h4>
+                            <p class="efficiency-description">
+                                Quản lý chiến dịch tiếp thị và quảng cáo kích thích sự quan tâm, thúc đẩy khách hàng
+                                sử dụng dịch vụ, qua đó tối ưu hóa hoạt động kinh doanh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Experience Section -->
+    <section class="experience-section" id="nang-cao-trai-nghiem">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Nâng cao trải nghiệm khách hàng</h2>
+                <p class="section-subtitle">
+                    Cải thiện chất lượng dịch vụ và tăng cường sự hài lòng của sản phụ
+                </p>
+            </div>
+
+            <div class="row">
+                <!-- Experience Feature 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="https://via.placeholder.com/350x250/e1f5fe/00bcd4?text=Giảm+thời+gian+chờ"
+                                alt="Giảm thời gian chờ" class="img-fluid">
+                        </div>
+                        <div class="experience-content">
+                            <h4 class="experience-title">Giảm thời gian chờ đợi</h4>
+                            <p class="experience-description">
+                                Quá trình tiếp nhận được tự động hóa, in số thứ tự thuận tiện.
+                                Hiển thị thời gian dự kiến khám bệnh sản phụ không tốn nhiều thời gian chờ đợi
+                                và có trải nghiệm tốt hơn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Feature 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="https://via.placeholder.com/350x250/f1f8e9/689f38?text=Chia+sẻ+an+toàn"
+                                alt="Chia sẻ an toàn" class="img-fluid">
+                        </div>
+                        <div class="experience-content">
+                            <h4 class="experience-title">Chia sẻ thông tin an toàn</h4>
+                            <p class="experience-description">
+                                Cung cấp khả năng chia sẻ thông tin bệnh án một cách an toàn và bảo mật thông qua
+                                ứng dụng di động giúp sản phụ có thể linh động trong việc theo dõi thai kỳ của mình.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Feature 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="https://via.placeholder.com/350x250/fff8e1/ffc107?text=Thiết+lập+kênh+liên+hệ"
+                                alt="Thiết lập kênh liên hệ" class="img-fluid">
+                        </div>
+                        <div class="experience-content">
+                            <h4 class="experience-title">Thiết lập kênh liên hệ</h4>
+                            <p class="experience-description">
+                                Hệ thống gửi thông báo lịch hẹn tự động qua SMS, Email và Zalo tăng cường dịch vụ
+                                chăm sóc khách hàng. Hỗ trợ và tư vấn trực tuyến với sản phụ thảo luận về tình trạng
+                                sức khỏe của mình.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="tinh-nang">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Tính năng cốt lõi HeraGYN</h2>
+                <p class="section-subtitle">
+                    Giải pháp toàn diện từ quản lý lịch hẹn đến tích hợp thiết bị siêu âm
+                </p>
+            </div>
+
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4 class="feature-title">Quản lý lịch hẹn thông minh</h4>
+                        <p class="feature-description">
+                            Tối ưu hóa lịch làm việc và giảm tình trạng quá tải nhờ hệ thống đặt lịch tự động.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <h4 class="feature-title">Tích hợp thiết bị siêu âm</h4>
+                        <p class="feature-description">
+                            Kết nối trực tiếp với máy siêu âm và hệ thống PACS, lưu trữ hình ảnh tự động.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h4 class="feature-title">Theo dõi thai kỳ</h4>
+                        <p class="feature-description">
+                            Hồ sơ điện tử chuyên biệt với các trường thông tin đặc thù cho sản phụ khoa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="feature-title">Ứng dụng cho bệnh nhân</h4>
+                        <p class="feature-description">
+                            Theo dõi hồ sơ sức khỏe, đặt lịch hẹn và nhận tư vấn chăm sóc thai sản cá nhân hóa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="bang-gia">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Bảng giá Phần mềm HeraGYN</h2>
+                <p class="section-subtitle">
+                    Các gói dịch vụ linh hoạt phù hợp với quy mô và nhu cầu của từng phòng khám sản phụ khoa
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Gói Cơ bản</h4>
+                            <div class="pricing-price">
+                                <span class="price-amount">450.000</span>
+                                <span class="price-currency">VNĐ</span>
+                                <span class="price-period">/tháng</span>
+                            </div>
+                            <p class="pricing-subtitle">Phù hợp với phòng khám sản phụ khoa nhỏ</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Quản lý lịch hẹn khám thai</li>
+                                <li><i class="fas fa-check"></i> Hồ sơ bệnh án sản phụ khoa</li>
+                                <li><i class="fas fa-check"></i> Theo dõi thai kỳ cơ bản</li>
+                                <li><i class="fas fa-check"></i> Quản lý dịch vụ siêu âm</li>
+                                <li><i class="fas fa-check"></i> Báo cáo thống kê cơ bản</li>
+                                <li><i class="fas fa-check"></i> Hỗ trợ kỹ thuật 24/7</li>
+                                <li><i class="fas fa-check"></i> Đào tạo sử dụng miễn phí</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#demo" class="btn btn-outline-primary btn-block">Dùng thử miễn phí</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Phổ biến nhất</div>
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Gói Chuyên nghiệp</h4>
+                            <div class="pricing-price">
+                                <span class="price-amount">1.200.000</span>
+                                <span class="price-currency">VNĐ</span>
+                                <span class="price-period">/tháng</span>
+                            </div>
+                            <p class="pricing-subtitle">Phù hợp với phòng khám có tích hợp thiết bị</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Tất cả tính năng gói Cơ bản</li>
+                                <li><i class="fas fa-check"></i> Tích hợp máy siêu âm</li>
+                                <li><i class="fas fa-check"></i> Hệ thống PACS chuyên sâu</li>
+                                <li><i class="fas fa-check"></i> Ứng dụng cho bệnh nhân</li>
+                                <li><i class="fas fa-check"></i> Marketing tự động</li>
+                                <li><i class="fas fa-check"></i> Phân tích dữ liệu nâng cao</li>
+                                <li><i class="fas fa-check"></i> Chăm sóc khách hàng VIP</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#demo" class="btn btn-primary btn-block">Chọn gói này</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Gói Doanh nghiệp</h4>
+                            <div class="pricing-price">
+                                <span class="price-amount">Liên hệ</span>
+                                <span class="price-period">để báo giá</span>
+                            </div>
+                            <p class="pricing-subtitle">Phù hợp với chuỗi phòng khám sản phụ khoa</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Tất cả tính năng gói Chuyên nghiệp</li>
+                                <li><i class="fas fa-check"></i> Quản lý chuỗi cơ sở</li>
+                                <li><i class="fas fa-check"></i> Báo cáo tổng hợp đa cơ sở</li>
+                                <li><i class="fas fa-check"></i> API tích hợp tùy chỉnh</li>
+                                <li><i class="fas fa-check"></i> Đào tạo tại chỗ</li>
+                                <li><i class="fas fa-check"></i> Hỗ trợ riêng 24/7</li>
+                                <li><i class="fas fa-check"></i> Tùy chỉnh theo yêu cầu</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#lien-he" class="btn btn-outline-primary btn-block">Liên hệ tư vấn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="pricing-note">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Tất cả gói dịch vụ đều bao gồm hosting, bảo trì và cập nhật định kỳ. Liên hệ hotline 079.790.7886 để
+                    được tư vấn chi tiết.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Section -->
+    <section class="implementation-section" id="trien-khai">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="implementation-content">
+                        <h2 class="section-title">Quy trình triển khai HeraGYN</h2>
+                        <p class="section-subtitle">
+                            Thời gian triển khai trung bình chỉ 2 tuần, không gián đoạn hoạt động khám chữa bệnh
+                        </p>
+
+                        <div class="implementation-steps">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>Khảo sát và tư vấn (1-2 ngày)</h5>
+                                    <p>Phân tích quy trình làm việc hiện tại, đưa ra giải pháp tối ưu cho phòng khám</p>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5>Cài đặt và cấu hình (3-5 ngày)</h5>
+                                    <p>Thiết lập hệ thống, tích hợp thiết bị siêu âm và chuyển đổi dữ liệu</p>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>Đào tạo và vận hành (5-7 ngày)</h5>
+                                    <p>Đào tạo nhân viên theo vai trò, chạy thử nghiệm và chính thức đưa vào sử dụng</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="support-features">
+                            <div class="support-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Đào tạo chuyên sâu cho từng vai trò</span>
+                            </div>
+                            <div class="support-item">
+                                <i class="fas fa-headset"></i>
+                                <span>Hỗ trợ kỹ thuật 24/7</span>
+                            </div>
+                            <div class="support-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Bảo trì và cập nhật định kỳ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="implementation-image">
+                        <img src="https://via.placeholder.com/500x400/f8f9fa/0066cc?text=Triển+khai+HeraGYN"
+                            alt="Triển khai HeraGYN" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="cta-title">Bắt kịp xu hướng chuyển đổi số ngay hôm nay</h2>
+                    <p class="cta-subtitle">
+                        Bộ giải pháp chuyên biệt nâng cao chất lượng chăm sóc sản phụ và tối ưu hóa vận hành phòng khám.
+                        Chăm sóc khách hàng trước - trong - sau khi thăm khám.
+                    </p>
+
+                    <div class="cta-features">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="cta-feature">
+                                    <i class="fas fa-play-circle"></i>
+                                    <h6>Buổi demo từ 30-60 phút</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cta-feature">
+                                    <i class="fas fa-desktop"></i>
+                                    <h6>Trải nghiệm trực tiếp đầy đủ chức năng</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cta-feature">
+                                    <i class="fas fa-headset"></i>
+                                    <h6>Chăm sóc khách hàng 24/7</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-form">
+                        <form id="demoForm" class="demo-form">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="Họ và tên *" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="email" class="form-control" placeholder="Email *" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="tel" class="form-control" placeholder="Số điện thoại *" required>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-8">
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="Ghi chú thêm về phòng khám của bạn..."></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-primary btn-block h-100">
+                                        <i class="fas fa-paper-plane"></i>
+                                        Đăng ký Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="lien-he">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3>Liên hệ để được tư vấn HeraGYN</h3>
+                        <p>QAS sẽ dựa vào nhu cầu quản lý thực tế của phòng khám để tư vấn phương án tiết kiệm nhất</p>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h6>Hotline tư vấn</h6>
+                                <p>079.790.7886</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h6>Email hỗ trợ</h6>
+                                <p>sales@qasol.net</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h6>Văn phòng</h6>
+                                <p>MNG Building, 38/15B Nguyễn Văn Trỗi, P.15, Q. Phú Nhuận, TP.HCM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-image">
+                        <img src="https://via.placeholder.com/500x400/f8f9fa/0066cc?text=Tư+vấn+HeraGYN"
+                            alt="Tư vấn HeraGYN" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <img src="https://qasvn.com/assets/img/logo/logo.svg" alt="QAS Logo" height="40" class="mb-3">
+                        <p>Đơn vị cung cấp giải pháp phần mềm y tế hàng đầu Việt Nam với hơn 15 năm kinh nghiệm.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-zalo"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Sản phẩm</h5>
+                        <ul class="footer-links">
+                            <li><a href="phan-mem-benh-vien.html">Phần mềm Bệnh viện</a></li>
+                            <li><a href="phan-mem-phong-kham-da-khoa.html">Phần mềm PK Đa Khoa</a></li>
+                            <li><a href="phan-mem-phong-kham-san-phu-khoa.html">Phần mềm PK Sản Phụ Khoa</a></li>
+                            <li><a href="phan-mem-phong-kham-mat.html">Phần mềm PK Mắt</a></li>
+                            <li><a href="phan-mem-nha-thuoc.html">Phần mềm Nhà thuốc</a></li>
+                            <li><a href="phan-mem-trung-tam-tiem-chung.html">Phần mềm Tiêm chủng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Dịch vụ</h5>
+                        <ul class="footer-links">
+                            <li><a href="#" onclick="showComingSoon()">Tư vấn triển khai</a></li>
+                            <li><a href="#" onclick="showComingSoon()">Đào tạo sử dụng</a></li>
+                            <li><a href="#" onclick="showComingSoon()">Hỗ trợ kỹ thuật</a></li>
+                            <li><a href="#" onclick="showComingSoon()">Bảo trì nâng cấp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Hỗ trợ</h5>
+                        <ul class="footer-links">
+                            <li><a href="#" onclick="showComingSoon()">Tài liệu hướng dẫn</a></li>
+                            <li><a href="#" onclick="showComingSoon()">Video đào tạo</a></li>
+                            <li><a href="#" onclick="showComingSoon()">Câu hỏi thường gặp</a></li>
+                            <li><a href="contact.html">Liên hệ hỗ trợ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Công ty</h5>
+                        <ul class="footer-links">
+                            <li><a href="#" onclick="showComingSoon()">Giới thiệu</a></li>
+                            <li><a href="#" onclick="showComingSoon()">Khách hàng</a></li>
+                            <li><a href="#" onclick="showComingSoon()">Tin tức</a></li>
+                            <li><a href="#" onclick="showComingSoon()">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">&copy; 2024 QAS Solutions. Tất cả quyền được bảo lưu.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <p class="company-info">Mã số thuế: 0312490712</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <div class="contact-item phone">
+            <a href="tel:0797907886" class="contact-link" data-toggle="tooltip" data-placement="left"
+                title="Gọi điện tư vấn HeraGYN">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <div class="contact-item zalo">
+            <a href="https://zalo.me/0797907886" target="_blank" class="contact-link" data-toggle="tooltip"
+                data-placement="left" title="Chat Zalo tư vấn">
+                <img src="https://via.placeholder.com/24x24/0084ff/ffffff?text=Z" alt="Zalo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Dropdown hover and click functionality
+        $(document).ready(function () {
+            // Initialize tooltips
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Handle dropdown for desktop
+            $('.dropdown').hover(
+                function () {
+                    if ($(window).width() > 768) {
+                        $(this).addClass('show');
+                        $(this).find('.dropdown-menu').addClass('show');
+                    }
+                },
+                function () {
+                    if ($(window).width() > 768) {
+                        $(this).removeClass('show');
+                        $(this).find('.dropdown-menu').removeClass('show');
+                    }
+                }
+            );
+
+            // Handle dropdown for mobile
+            $('.dropdown-toggle').click(function (e) {
+                if ($(window).width() <= 768) {
+                    e.preventDefault();
+                    var $dropdown = $(this).parent();
+                    $dropdown.toggleClass('show');
+                    $dropdown.find('.dropdown-menu').toggleClass('show');
+                }
+            });
+
+            // Close dropdown when clicking outside
+            $(document).click(function (e) {
+                if (!$(e.target).closest('.dropdown').length) {
+                    $('.dropdown').removeClass('show');
+                    $('.dropdown-menu').removeClass('show');
+                }
+            });
+
+            // Prevent dropdown from closing when clicking inside
+            $('.dropdown-menu').on('click', function (e) {
+                e.stopPropagation();
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        $('a[href*="#"]').on('click', function (e) {
+            e.preventDefault();
+            var target = $(this.hash);
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 70
+                }, 1000);
+            }
+        });
+
+        // Navbar background change on scroll
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+        });
+
+        // Form submission
+        $('form').on('submit', function (e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất để tư vấn giải pháp HeraGYN phù hợp.');
+        });
+
+        // Coming soon notification
+        function showComingSoon() {
+            alert('Tính năng này sẽ có sớm. Vui lòng liên hệ hotline 079.790.7886 để biết thêm chi tiết!');
+        }
+
+        // Make showComingSoon globally available
+        window.showComingSoon = showComingSoon;
+
+        // Animation on scroll
+        function animateOnScroll() {
+            $('.quality-card, .efficiency-card, .experience-card, .feature-card, .pricing-card').each(function () {
+                if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                    $(this).addClass('animate');
+                }
+            });
+        }
+
+        $(window).scroll(animateOnScroll);
+        $(document).ready(animateOnScroll);
+    </script>
+</body>
+
+</html>
