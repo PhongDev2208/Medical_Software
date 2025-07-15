@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/homepage.css">
@@ -22,29 +24,32 @@
   <!-- Header Banner -->
   <header class="header-banner">
     <div class="header-slider-container">
-      <div id="headerCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <div class="swiper headerSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-              class="d-block w-100 slider-image-full" alt="Phần mềm y tế số">
+              class="slider-image-full" alt="Phần mềm y tế số">
           </div>
-          <div class="carousel-item">
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-              class="d-block w-100 slider-image-full" alt="Quản lý bệnh viện">
+              class="slider-image-full" alt="Quản lý bệnh viện">
           </div>
-          <div class="carousel-item">
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-              class="d-block w-100 slider-image-full" alt="Phòng khám hiện đại">
+              class="slider-image-full" alt="Phòng khám hiện đại">
           </div>
-          <div class="carousel-item">
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-              class="d-block w-100 slider-image-full" alt="Chăm sóc sức khỏe">
+              class="slider-image-full" alt="Chăm sóc sức khỏe">
           </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
 
       <!-- Overlay Content -->
@@ -109,8 +114,8 @@
               </a>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#he-sinh-thai">Hệ sinh thái</a></li>
-          <li class="nav-item"><a class="nav-link" href="#loi-ich">Lợi ích</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#he-sinh-thai">Hệ sinh thái</a></li>
+          <li class="nav-item"><a class="nav-link" href="#loi-ich">Lợi ích</a></li> -->
           <li class="nav-item"><a class="nav-link" href="#khach-hang">Khách hàng</a></li>
           <li class="nav-item"><a class="nav-link" href="#lienhe">Liên hệ</a></li>
         </ul>
@@ -539,12 +544,44 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <script>
-    // Auto-start carousel
-    $('#headerCarousel').carousel({
-      interval: 4000,
-      pause: 'hover'
+    // Initialize Swiper
+    var swiper = new Swiper('.headerSwiper', {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      loop: true,
+      grabCursor: true,
+      touchRatio: 1,
+      touchAngle: 45,
+      simulateTouch: true,
+      allowTouchMove: true,
+      on: {
+        touchStart: function () {
+          this.autoplay.stop();
+        },
+        touchEnd: function () {
+          this.autoplay.start();
+        }
+      }
     });
 
     // Smooth scrolling for navigation links
