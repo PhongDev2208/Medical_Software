@@ -2,7 +2,7 @@
 .floating-contact {
   position: fixed;
   right: 20px;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .contact-zalo {

@@ -21,14 +21,47 @@
 <body>
   <!-- Header Banner -->
   <header class="header-banner">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-8">
-          <h1 class="display-4 font-weight-bold mb-3">Phần Mềm Y Tế Số</h1>
-          <p class="lead mb-4">Hệ sinh thái phần mềm quản lý y tế hiện đại cho phòng khám & bệnh viện</p>
-          <div class="d-flex justify-content-center">
-            <span class="badge badge-light px-3 py-2 mr-3"><i class="fas fa-users mr-2"></i>150+ Cơ sở y tế</span>
-            <span class="badge badge-light px-3 py-2"><i class="fas fa-heart mr-2"></i>5M+ Bệnh nhân</span>
+    <div class="header-slider-container">
+      <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+              class="d-block w-100 slider-image-full" alt="Phần mềm y tế số">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+              class="d-block w-100 slider-image-full" alt="Quản lý bệnh viện">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+              class="d-block w-100 slider-image-full" alt="Phòng khám hiện đại">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+              class="d-block w-100 slider-image-full" alt="Chăm sóc sức khỏe">
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlay Content -->
+      <div class="header-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="header-text">
+                <h1 class="display-3 font-weight-bold mb-3">Phần mềm y tế số</h1>
+                <p class="lead mb-4">Hệ sinh thái phần mềm quản lý y tế hiện đại cho phòng khám & bệnh viện</p>
+                <div class="d-flex flex-wrap">
+                  <span class="badge badge-light px-3 py-2 mr-3 mb-2"><i class="fas fa-users mr-2"></i>150+ Cơ sở y
+                    tế</span>
+                  <span class="badge badge-light px-3 py-2 mb-2"><i class="fas fa-heart mr-2"></i>5M+ Bệnh nhân</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -78,9 +111,7 @@
           </li>
           <li class="nav-item"><a class="nav-link" href="#he-sinh-thai">Hệ sinh thái</a></li>
           <li class="nav-item"><a class="nav-link" href="#loi-ich">Lợi ích</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tin-tuc">Tin tức</a></li>
           <li class="nav-item"><a class="nav-link" href="#khach-hang">Khách hàng</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
           <li class="nav-item"><a class="nav-link" href="#lienhe">Liên hệ</a></li>
         </ul>
       </div>
@@ -315,59 +346,6 @@
     </div>
   </section>
 
-  <!-- News Section -->
-  <section id="tin-tuc" class="py-80" style="background: var(--light-blue);">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2 class="section-title">Tin công nghệ - phần mềm</h2>
-          <p class="lead text-muted">Cập nhật kiến thức và xu hướng công nghệ y tế</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
-          <div class="card card-custom h-100">
-            <img
-              src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-              class="card-img-top card-img-custom" alt="Quy trình tiếp đón bệnh nhân">
-            <div class="card-body">
-              <h6 class="card-title">Quy trình tiếp đón bệnh nhân Bộ Y tế</h6>
-              <p class="card-text text-muted small">Hướng dẫn các bước đăng ký, khám bệnh, thanh toán, nhận thuốc hiệu
-                quả và nhanh chóng.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
-          <div class="card card-custom h-100">
-            <img
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-              class="card-img-top card-img-custom" alt="Quy tắc ứng xử nhân viên y tế">
-            <div class="card-body">
-              <h6 class="card-title">Quy tắc ứng xử của nhân viên y tế 2025</h6>
-              <p class="card-text text-muted small">Cập nhật quy định mới nhất về quy tắc ứng xử, giao tiếp nghề nghiệp
-                trong ngành y tế.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
-          <div class="card card-custom h-100">
-            <img
-              src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-              class="card-img-top card-img-custom" alt="Bảo hiểm y tế tự nguyện">
-            <div class="card-body">
-              <h6 class="card-title">Bảo hiểm y tế tự nguyện là gì?</h6>
-              <p class="card-text text-muted small">Giải thích về BHYT tự nguyện, cách tham gia và lợi ích cho bệnh
-                nhân, cơ sở y tế.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Xem chi tiết</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Customer Section -->
   <section id="khach-hang" class="py-100">
     <div class="container">
@@ -378,7 +356,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 mb-4 fade-in-up">
+        <div class="col-lg-12 mb-4 fade-in-up">
           <div class="card card-custom">
             <div class="card-body">
               <div class="row align-items-center">
@@ -400,80 +378,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-4 fade-in-up">
-          <div class="card card-custom">
-            <div class="card-body text-center">
-              <div class="eco-icon mb-3">
-                <i class="fas fa-hospital-alt"></i>
-              </div>
-              <h5 class="text-primary">150+ cơ sở y tế</h5>
-              <p class="text-muted">Hơn 5.000 chuyên viên y tế sử dụng, phục vụ 5 triệu bệnh nhân trên toàn quốc.</p>
-              <div class="row text-center mt-3">
-                <div class="col-4">
-                  <strong class="text-primary">99.9%</strong>
-                  <div class="small text-muted">Uptime</div>
-                </div>
-                <div class="col-4">
-                  <strong class="text-primary">24/7</strong>
-                  <div class="small text-muted">Hỗ trợ</div>
-                </div>
-                <div class="col-4">
-                  <strong class="text-primary">4.9/5</strong>
-                  <div class="small text-muted">Đánh giá</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq" class="py-80" style="background: var(--light-blue);">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <h2 class="section-title">Câu hỏi thường gặp</h2>
-          <p class="lead text-muted">Những thắc mắc phổ biến về sản phẩm và dịch vụ</p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="faq-item fade-in-up">
-            <div class="faq-header" data-toggle="collapse" data-target="#faq1">
-              <i class="fas fa-plus mr-2"></i>Các dịch vụ chính của công ty là gì?
-            </div>
-            <div id="faq1" class="collapse faq-body">
-              Chúng tôi cung cấp phần mềm quản lý phòng khám, bệnh viện, tiêm chủng, marketing y tế và hồ sơ sức khỏe
-              điện tử.
-            </div>
-          </div>
-          <div class="faq-item fade-in-up">
-            <div class="faq-header" data-toggle="collapse" data-target="#faq2">
-              <i class="fas fa-plus mr-2"></i>Lợi ích khi lựa chọn đồng hành cùng chúng tôi?
-            </div>
-            <div id="faq2" class="collapse faq-body">
-              Tối ưu vận hành, tăng doanh thu, nâng cao trải nghiệm bệnh nhân, hỗ trợ 24/7 và triển khai nhanh chóng.
-            </div>
-          </div>
-          <div class="faq-item fade-in-up">
-            <div class="faq-header" data-toggle="collapse" data-target="#faq3">
-              <i class="fas fa-plus mr-2"></i>Phần mềm có tích hợp thiết bị y tế không?
-            </div>
-            <div id="faq3" class="collapse faq-body">
-              Có, hệ thống hỗ trợ kết nối với nhiều thiết bị siêu âm, xét nghiệm, PACS, HIS, cổng tiêm chủng quốc gia.
-            </div>
-          </div>
-          <div class="faq-item fade-in-up">
-            <div class="faq-header" data-toggle="collapse" data-target="#faq4">
-              <i class="fas fa-plus mr-2"></i>Làm thế nào để liên hệ tư vấn hoặc đặt hàng?
-            </div>
-            <div id="faq4" class="collapse faq-body">
-              Bạn có thể liên hệ qua hotline, email hoặc điền form liên hệ bên dưới. Chúng tôi sẽ phản hồi trong 24h.
             </div>
           </div>
         </div>
@@ -637,6 +541,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
+    // Auto-start carousel
+    $('#headerCarousel').carousel({
+      interval: 4000,
+      pause: 'hover'
+    });
+
     // Smooth scrolling for navigation links
     $('a[href^="#"]').on('click', function (event) {
       var target = $(this.getAttribute('href'));
@@ -659,12 +569,6 @@
 
     $(window).scroll(animateOnScroll);
     $(document).ready(animateOnScroll);
-
-    // FAQ accordion
-    $('.faq-header').click(function () {
-      $(this).parent().toggleClass('active');
-      $(this).find('i').toggleClass('fa-plus fa-minus');
-    });
 
     // Form submission
     $('form').submit(function (e) {

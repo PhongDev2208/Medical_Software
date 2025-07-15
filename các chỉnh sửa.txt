@@ -1,0 +1,5 @@
+Cho text "Phần mềm y tế số" lên top left
+header-banner có slider các hình tự động chạy
+Remove section id="tin-tuc" và css của nó
+Remove card có text "150+ cơ sở y tế" và css của nó
+Header bỏ: hệ sinh thái, Lợi ích, Tin tức, FAQ
