@@ -3,9 +3,10 @@
 /* Section Separator */
 .section-separator {
   height: 60px;
-  background: linear-gradient(180deg, 
-    rgba(255, 255, 255, 0) 0%, 
-    rgba(248, 249, 250, 0.5) 50%, 
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(248, 249, 250, 0.5) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   position: relative;
@@ -19,9 +20,10 @@
   transform: translateX(-50%);
   width: 100px;
   height: 2px;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    #007bff 50%, 
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #007bff 50%,
     transparent 100%
   );
 }
