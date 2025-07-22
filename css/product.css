@@ -1,5 +1,31 @@
 /* Product Page Specific Styles */
 
+/* Section Separator */
+.section-separator {
+  height: 60px;
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(248, 249, 250, 0.5) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: relative;
+}
+
+.section-separator::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    #007bff 50%, 
+    transparent 100%
+  );
+}
+
 /* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

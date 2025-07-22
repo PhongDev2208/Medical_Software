@@ -8,115 +8,132 @@
     <meta name="description"
         content="Phần mềm quản lý phòng khám đa khoa hiện đại, tối ưu quy trình khám bệnh, quản lý hồ sơ điện tử, tăng hiệu quả vận hành và nâng cao trải nghiệm bệnh nhân.">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        integrity="sha256-9J51HANynYfKy8FWMZMS/7RJQSiL5jDVZl4jf3QhwAA=" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/floating-contact.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="https://qasvn.com/assets/img/logo/logo.svg" alt="QAS Logo" height="40">
-            </a>
+    <!-- Header Banner -->
+    <header class="header-banner">
+        <div class="header-slider-container">
+            <div class="swiper headerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                            class="slider-image-full" alt="Phần mềm y tế số - Giải pháp quản lý hiện đại" loading="lazy"
+                            onerror="this.style.display='none'">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                            class="slider-image-full" alt="Quản lý bệnh viện - Hệ thống thông minh" loading="lazy"
+                            onerror="this.style.display='none'">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                            class="slider-image-full" alt="Phòng khám hiện đại - Chăm sóc sức khỏe" loading="lazy"
+                            onerror="this.style.display='none'">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                            class="slider-image-full" alt="Chăm sóc sức khỏe - Dịch vụ y tế chất lượng" loading="lazy"
+                            onerror="this.style.display='none'">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <!-- Navigation in Header -->
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom-header">
+                <div class="container">
+                    <a class="navbar-brand font-weight-bold" href="index.html"><i class="fas fa-heartbeat mr-2"></i>Y Tế
+                        Số</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="productDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="productDropdown">
+                                    <h6 class="dropdown-header">Phần mềm HIS Quản lý</h6>
+                                    <a class="dropdown-item active" href="phan-mem-phong-kham-da-khoa.html">
+                                        <i class="fas fa-hospital mr-2"></i>Phần mềm PK Đa Khoa
+                                    </a>
+                                    <a class="dropdown-item" href="phan-mem-benh-vien.html">
+                                        <i class="fas fa-hospital-alt mr-2"></i>Phần mềm Bệnh viện
+                                    </a>
+                                    <a class="dropdown-item" href="phan-mem-phong-kham-mat.html">
+                                        <i class="fas fa-eye mr-2"></i>Phần mềm PK Mắt HeliViz
+                                    </a>
+                                    <a class="dropdown-item" href="phan-mem-phong-kham-san-phu-khoa.html">
+                                        <i class="fas fa-baby mr-2"></i>Phần mềm PK Sản Phụ Khoa
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#khach-hang">Khách hàng</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Trang chủ</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown">
-                            Sản phẩm
-                        </a>
-                        <div class="dropdown-menu dropdown-mega" aria-labelledby="navbarDropdown">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <h6 class="dropdown-header">
-                                            <i class="fas fa-hospital text-primary"></i>
-                                            Phần mềm Bệnh viện
-                                        </h6>
-                                        <a class="dropdown-item" href="phan-mem-benh-vien.html">
-                                            <i class="fas fa-building"></i>
-                                            Bệnh viện Đa khoa
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h6 class="dropdown-header">
-                                            <i class="fas fa-clinic-medical text-success"></i>
-                                            Phần mềm Phòng khám
-                                        </h6>
-                                        <a class="dropdown-item active" href="phan-mem-phong-kham-da-khoa.html">
-                                            <i class="fas fa-user-md"></i>
-                                            PK Đa khoa
-                                        </a>
-                                        <a class="dropdown-item" href="phan-mem-phong-kham-mat.html">
-                                            <i class="fas fa-eye"></i>
-                                            PK Mắt
-                                        </a>
-                                        <a class="dropdown-item" href="phan-mem-phong-kham-san-phu-khoa.html">
-                                            <i class="fas fa-baby"></i>
-                                            PK Sản Phụ Khoa
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h6 class="dropdown-header">
-                                            <i class="fas fa-pills text-info"></i>
-                                            Quản lý Dược phẩm
-                                        </h6>
-                                        <a class="dropdown-item" href="phan-mem-nha-thuoc.html">
-                                            <i class="fas fa-prescription-bottle-alt"></i>
-                                            Phần mềm Nhà thuốc
-                                        </a>
-                                        <a class="dropdown-item" href="phan-mem-trung-tam-tiem-chung.html">
-                                            <i class="fas fa-syringe"></i>
-                                            TT Tiêm chủng
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h6 class="dropdown-header">
-                                            <i class="fas fa-mobile-alt text-warning"></i>
-                                            Ứng dụng di động
-                                        </h6>
-                                        <a class="dropdown-item" href="ung-dung-ho-so-suc-khoe.html">
-                                            <i class="fas fa-heart"></i>
-                                            Hồ sơ Sức khỏe
-                                        </a>
-                                    </div>
+            <!-- Overlay Content -->
+            <div class="header-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="header-text">
+                                <nav aria-label="breadcrumb" class="mb-3">
+                                    <ol class="breadcrumb bg-transparent">
+                                        <li class="breadcrumb-item"><a href="index.html" class="text-white">Trang
+                                                chủ</a></li>
+                                        <li class="breadcrumb-item"><a href="index.html#sanpham" class="text-white">Sản
+                                                phẩm</a></li>
+                                        <li class="breadcrumb-item text-white active" aria-current="page">Phòng khám đa
+                                            khoa</li>
+                                    </ol>
+                                </nav>
+                                <h1 class="display-3 font-weight-bold mb-3">Phần mềm Phòng Khám Đa Khoa</h1>
+                                <p class="lead mb-4">Giải pháp quản lý toàn diện cho phòng khám đa khoa - Tối ưu quy
+                                    trình, nâng cao hiệu quả</p>
+                                <div class="d-flex flex-wrap">
+                                    <span class="badge badge-light px-3 py-2 mr-3 mb-2"><i
+                                            class="fas fa-check mr-2"></i>Quản lý hồ sơ</span>
+                                    <span class="badge badge-light px-3 py-2 mb-2"><i
+                                            class="fas fa-calendar mr-2"></i>Lịch hẹn thông minh</span>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Liên hệ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-cta" href="contact.html">Dùng thử miễn phí</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-
+    </header>
+    
+    <!-- Separator Section -->
+    <div class="section-separator"></div>
+    
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
@@ -767,14 +784,79 @@
         </a>
     </div>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact contact-zalo">
+        <div class="contact-tooltip">Chat qua Zalo</div>
+        <a href="https://zalo.me/0797907886" target="_blank" class="contact-btn zalo">
+            <i class="fas fa-comments"></i>
+        </a>
+    </div>
+
+    <div class="floating-contact contact-phone">
+        <div class="contact-tooltip">Gọi ngay: 0797 907 886</div>
+        <a href="tel:0797907886" class="contact-btn phone">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+    <!-- Bootstrap 4 JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+        integrity="sha256-KcXKukgzLAeJVJhXWNJm7/FBN7jkN56hHLzLVwIa74o=" crossorigin="anonymous"></script>
 
     <script>
-        // Dropdown hover and click functionality
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if Swiper is loaded
+            if (typeof Swiper !== 'undefined') {
+                try {
+                    console.log('Initializing Swiper...');
+                    var swiper = new Swiper('.headerSwiper', {
+                        spaceBetween: 0,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 4000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        effect: 'fade',
+                        fadeEffect: {
+                            crossFade: true
+                        },
+                        loop: true,
+                        grabCursor: true,
+                        speed: 800,
+                        watchOverflow: true,
+                        on: {
+                            init: function () {
+                                console.log('Swiper initialized successfully');
+                            }
+                        }
+                    });
+                } catch (error) {
+                    console.error('Swiper initialization error:', error);
+                }
+            }
+        });
+
+        // jQuery ready function
         $(document).ready(function () {
-            // Handle dropdown for desktop
+            // Dropdown hover effect for desktop
             $('.dropdown').hover(
                 function () {
                     if ($(window).width() > 768) {
@@ -807,12 +889,52 @@
                     $('.dropdown-menu').removeClass('show');
                 }
             });
-        });
 
-        // Form submission
-        $('form').on('submit', function (e) {
-            e.preventDefault();
-            alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất để tư vấn giải pháp phù hợp.');
+            // Form submission
+            $('form').on('submit', function (e) {
+                e.preventDefault();
+                alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất để tư vấn giải pháp phù hợp.');
+            });
+
+            // Animation on scroll
+            function animateOnScroll() {
+                $('.feature-card, .benefit-card, .experience-card, .pricing-card').each(function () {
+                    if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                        $(this).addClass('animate');
+                    }
+                });
+            }
+
+            $(window).scroll(animateOnScroll);
+            animateOnScroll();
+
+            // Navbar scroll effect for header navigation
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar-custom-header').addClass('scrolled');
+                } else {
+                    $('.navbar-custom-header').removeClass('scrolled');
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            $('a[href*="#"]').on('click', function (e) {
+                e.preventDefault();
+                var target = $(this.hash);
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                }
+            });
+
+            // Initialize tooltips
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Prevent dropdown from closing when clicking inside
+            $('.dropdown-menu').on('click', function (e) {
+                e.stopPropagation();
+            });
         });
 
         // Coming soon notification
@@ -822,48 +944,6 @@
 
         // Make showComingSoon globally available
         window.showComingSoon = showComingSoon;
-
-        // Animation on scroll
-        function animateOnScroll() {
-            $('.feature-card, .benefit-card, .experience-card, .pricing-card').each(function () {
-                if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
-                    $(this).addClass('animate');
-                }
-            });
-        }
-
-        $(window).scroll(animateOnScroll);
-        $(document).ready(animateOnScroll);
-
-        // Prevent dropdown from closing when clicking inside
-        $('.dropdown-menu').on('click', function (e) {
-            e.stopPropagation();
-        });
-
-        // Initialize tooltips
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-
-        // Smooth scrolling for anchor links
-        $('a[href*="#"]').on('click', function (e) {
-            e.preventDefault();
-            var target = $(this.hash);
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 70
-                }, 1000);
-            }
-        });
-
-        // Navbar background change on scroll
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.navbar').addClass('scrolled');
-            } else {
-                $('.navbar').removeClass('scrolled');
-            }
-        });
     </script>
 </body>
 
